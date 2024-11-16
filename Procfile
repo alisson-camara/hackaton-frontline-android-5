@@ -1,1 +1,1 @@
-web: ./ktor-learning/build/install/ktor-learnng-all/bin/ktor-learnng-all
+web: ./ktor-learning/build/install/com.workshop.ktor-learnng/bin/com.workshop.ktor-learnng
