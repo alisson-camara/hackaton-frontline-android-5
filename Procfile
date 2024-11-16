@@ -1,1 +1,1 @@
-java -jar ktor-learning/build/libs/com.workshop.ktor-learnng-all.jar
+web: ./ktor-learning/build/install/ktor-learnng-all/bin/ktor-learnng-all
