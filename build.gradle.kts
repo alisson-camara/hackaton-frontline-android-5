@@ -37,3 +37,7 @@ dependencies {
     testImplementation(libs.kotlin.test.junit)
     testImplementation(libs.ktor.client.content.negotiation)
 }
+
+tasks {
+    create("stage").dependsOn("installDist")
+}
