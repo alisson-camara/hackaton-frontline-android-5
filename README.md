@@ -1,2 +1,2 @@
 # ktor-bff-training
-Reposiry created to learn ktor heroku integration
+Repository created to learn ktor heroku integration
