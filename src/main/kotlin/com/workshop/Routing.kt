@@ -1,5 +1,6 @@
 package com.workshop
 
+import com.workshop.model.PlayerModel
 import io.ktor.http.*
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
@@ -20,6 +21,15 @@ fun Application.configureRouting() {
         }
     }
     routing {
+        get("/players") {
+            call.respond(listOf(
+                PlayerModel("Player 1", "1"),
+                PlayerModel("Player 2", "2"),
+                PlayerModel("Player 3", "3"),
+                PlayerModel("Player 4", "4")
+            )
+            )
+        }
         get("/") {
             call.respondText("Hello World!")
         }
