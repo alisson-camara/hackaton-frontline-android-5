@@ -33,6 +33,10 @@ fun Application.configureRouting() {
         get("/") {
             call.respondText("Hello World!")
         }
+        post("/sendvote") {
+            val receivedValue = call.receiveText()
+            call.respondText { receivedValue }
+        }
         // Static plugin. Try to access `/static/index.html`
         staticResources("/static", "static")
     }
