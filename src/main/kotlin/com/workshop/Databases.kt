@@ -17,7 +17,7 @@ import java.sql.Connection
 import java.sql.DriverManager
 
 fun Application.configureDatabases() {
-    val dbUri: URI = URI(System.getenv("DATABASE_URL"))
+    /*val dbUri: URI = URI(System.getenv("DATABASE_URL"))
 
     val username: String = dbUri.userInfo.split(":").get(0)
     val password: String = dbUri.userInfo.split(":").get(1)
@@ -30,7 +30,8 @@ fun Application.configureDatabases() {
     )
     transaction {
         SchemaUtils.create(TaskTable)
-    }
+        SchemaUtils.create(TaskTable)
+    }*/
 }
 /**
  * Makes a connection to a Postgres database.

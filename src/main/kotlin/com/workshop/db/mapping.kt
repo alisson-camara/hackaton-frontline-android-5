@@ -1,5 +1,6 @@
 package com.workshop.db
 
+import com.workshop.model.PlayerModel
 import com.workshop.model.Priority
 import com.workshop.model.Task
 import kotlinx.coroutines.Dispatchers
@@ -14,6 +15,26 @@ object TaskTable : IntIdTable("task") {
     val name = varchar("name", 50)
     val description = varchar("description", 50)
     val priority = varchar("priority", 50)
+}
+
+object RoomTable : IntIdTable("room") {
+    val name = varchar("name", 50)
+    val currentTask = varchar("current_task", 50)
+    val moderator = varchar("moderator", 50)
+}
+
+object PlayerTable: IntIdTable("player") {
+    val name = varchar("name", 50)
+    val point = varchar("current_task", 50)
+    val room = reference("room_id", RoomTable)
+}
+
+class RoomDAO(id: EntityID<Int>): IntEntity(id) {
+    companion object : IntEntityClass<RoomDAO>(RoomTable)
+
+    var name by RoomTable.name
+    var currentTask by RoomTable.currentTask
+    var moderator by RoomTable.moderator
 }
 
 class TaskDAO(id: EntityID<Int>) : IntEntity(id) {
