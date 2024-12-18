@@ -1,7 +1,7 @@
 # ktor-bff-training
 Repository created to learn ktor heroku integration
 
-URL: [https://hackaton-frontline-android-1-1387e168fe2f.herokuapp.com/](https://hackaton-frontline-android-5-1360409b724b.herokuapp.com/)
+URL: https://hackaton-frontline-android-5-1360409b724b.herokuapp.com
 
 Exemplos de Requests: =====================
 
