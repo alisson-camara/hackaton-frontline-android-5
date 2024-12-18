@@ -1,6 +1,5 @@
 package com.workshop.db
 
-import com.workshop.model.PlayerModel
 import com.workshop.model.Priority
 import com.workshop.model.Task
 import kotlinx.coroutines.Dispatchers
